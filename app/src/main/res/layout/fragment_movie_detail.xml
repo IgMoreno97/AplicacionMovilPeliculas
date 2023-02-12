@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".movies.MovieDetailFragment"
+    android:padding="5dp"
+    android:background="@color/black">
+
+   <ImageView
+       android:id="@+id/imagenTopDetail"
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:scaleType="centerCrop"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+   <ImageView
+       android:id="@+id/imageDetail"
+       android:layout_width="200dp"
+       android:layout_height="250dp"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/border_shape"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="15dp">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="TITULO"
+       android:textColor="@color/white"
+       android:textStyle="bold"/>
+   <TextView
+       android:id="@+id/tituloPeli"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Titulo"
+       android:textColor="@color/white"
+       android:layout_marginBottom="10dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="AÑO DE ESTRENO"
+       android:textColor="@color/white"
+       android:textStyle="bold"/>
+   <TextView
+       android:id="@+id/añoEstrenoPeli"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Estreno"
+       android:textColor="@color/white"
+       android:layout_marginBottom="10dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="IDIOMA"
+       android:textColor="@color/white"
+       android:textStyle="bold"/>
+   <TextView
+       android:id="@+id/lenguajePeli"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Lenguaje"
+       android:textColor="@color/white"
+       android:layout_marginBottom="10dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="VALORACIÓN"
+       android:textColor="@color/white"
+       android:textStyle="bold"/>
+
+   <TextView
+       android:id="@+id/notaMediaPeli"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="VALORACIÓN"
+       android:textColor="@color/white"
+       android:layout_marginBottom="10dp"/>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:orientation="horizontal">
+
+      <CheckBox
+          android:id="@+id/estrella1"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:button="@drawable/ic__star_rellena"
+          android:buttonTint="@color/yellow"
+          android:paddingTop="10dp" />
+
+      <CheckBox
+          android:id="@+id/estrella2"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:button="@drawable/ic__star_rellena"
+          android:buttonTint="@color/yellow"
+          android:paddingTop="10dp" />
+
+      <CheckBox
+          android:id="@+id/estrella3"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:button="@drawable/ic__star_rellena"
+          android:buttonTint="@color/yellow"
+          android:paddingTop="10dp" />
+
+      <CheckBox
+          android:id="@+id/estrella4"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:button="@drawable/ic__star_rellena"
+          android:buttonTint="@color/white"
+          android:paddingTop="10dp" />
+
+      <CheckBox
+          android:id="@+id/estrella5"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:button="@drawable/ic__star_rellena"
+          android:buttonTint="@color/white"
+          android:paddingTop="10dp" />
+   </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginTop="30dp"
+       android:layout_marginLeft="5dp"
+       android:gravity="center">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="DESCRIPCION"
+       android:textColor="@color/white"
+       android:textStyle="bold" />
+   <TextView
+       android:id="@+id/descripcionPeli"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@color/white"
+       android:layout_marginTop="10dp"
+       android:gravity="center"
+       android:text="Descripcion"/>
+
+      <com.google.android.material.chip.ChipGroup
+          android:id="@+id/chipGeneros"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:chipBackgroundColor="@color/purple_500"
+          android:layout_marginTop="10dp"/>
+   </LinearLayout>
+</LinearLayout>
+</ScrollView>
